@@ -28,7 +28,7 @@ export const Metals = () => {
     for (const metal of metals) {
 
         if (currentOrder.metalId === metal.id) {        
-            html += `<li><input type="radio" name="metal" value="${metal.id}" checked="checked"/> ${metal.type}</li>`
+            html += `<li><input type="radio" name="metal" value="${metal.id}" checked="checked"/> ${metal.metal}</li>`
         } else {
             html += `<li><input type="radio" name ="metal" value="${metal.id}"/> ${metal.metal}</li>`
         }
